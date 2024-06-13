@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel = "stylesheet" href="styles/product.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <title>ADIDAS T-SHIRT2</title>
+</head>
+<body>
+  <header>
+    <div class="inner-header">
+      <div class="logo-container">
+        <a href="home.html"><h1>MYSTORE</h1></a>
+      </div>
+      <ul class="navigation">
+        <a href="login-page.html"><li>Account</li></a>
+        <a href="help-page.html"><li>Help</li></a>
+        <a href="contact-page.html"><li>Contact</li></a>
+        <button id="search-button-js"><li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="search-icon" viewBox="0 0 16 16">
+          <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+        </svg></li></button>
+        <a href="cart.html"><li><svg class="cartIcon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+          <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+        </svg></li></a>
+      </ul>
+    </div>
+  </header>
+  <main><section id="ssc-js" class="searchBarSection"></section>
+    <section class="product-detail-container">
+    <div class="product-image">
+      <div><img src="images/t-shirtImage.png"></div>
+      <div><img src="images/t-shirt1-image2.png"></div>
+      <div><img src="images/shirt1.image5.png"></div>
+      <div><img src="images/t-shirt1-image4.png"></div>
+    </div><aside class="product-detail"><div class="product-name"><h2 id="name-js">ADIDAS T-SHIRT2</h2>
+      <h3 class="price">80.60$</h3>
+    </div>
+    <hr>
+    <div class ="color-and-select-container"><span class="detail-item-name">color</span> <select name="color" id="color-selector">
+      <option value="grey">
+      </option>
+      <option value="grey">grey
+      </option>
+      <option value="light-Blue">light-Blue</option>
+      <option value="orange">orange</option>
+      <option value="light-purple">light-purple</option>
+      
+    </select>
+    </div>
+    <hr>
+    <div class="size-and-select-container"><span class="detail-item-name">size</span><select name="size" id="sizeSelector">
+      <option value="default"></option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+      <option value="13">13</option>
+      <option value="14">14</option>
+      <option value="15">15</option>
+      <option value="16">16</option>
+      <option value="17">17</option>
+      <option value="18">18</option>
+      <option value="19">19</option>
+      <option value="20">20</option>
+      <option value="21">21</option>
+    </select></div>
+    <hr>
+    <div class="review"><span class="detail-item-name">review</span>
+    <div class="star-rating">
+      <button><i class="bi bi-star-fill"></i></button>
+      <button><i class="bi bi-star-fill"></i></button>
+      <button><i class="bi bi-star-fill"></i></button>
+      <button><i class="bi bi-star-fill"></i></button>
+      <button><i class="bi bi-star-fill"></i></button>
+    </div>
+  </div>
+    <hr>
+    <div class="button-and-select-container">
+      <select name="p-q-s" id="product-quantity-selector" class="produtQselector">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+      </select>
+      <button id="add-to-cart-js" class="add-to-cart-button">Add To Cart</button>
+    </div>
+  </aside></section>
+  <div class="you-might-also-like-title"><h2>You Might Also Like</h2></div>
+  <section class="you-might-also-like" id="you-might-also-like-js">
+  </section>
+</main>
+<!--product page's footer-->
+<footer>
+  <div>
+    <ul>
+      <h5>PRODUCTS</h5>
+      <a href="t-shirts-page.html"><li>T-shirts</li></a>
+      <a href="shoe-page.html"><li>Shoes</li></a>
+      <a href="accessories-page.html"><li>Accessories</li></a>
+    </ul>
+
+    <ul>
+      <h5>CATEGORIES</h5>
+      <a href="men-page.html"><li>Men</li></a>
+      <a href="women.html"><li>Women</li></a>
+      <a href="kids.html"><li>Kids</li></a>
+    </ul>
+    <ul class="contact-us">
+      <h5>CONTACT-US</h5>
+      <a href=""><li>+1 (777) 044-7842</li></a>
+      <a href=""><li>mystore1@gmail.com</li></a>
+    </ul>
+  </div>
+  <ul class="FOLLOW-US">
+    <h5>FOLLOW-US</h5>
+    <a href="https://web.facebook.com/profile.php?id=61555157235582"><li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+      <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+    </svg></li></a>
+    <a href="https://www.instagram.com/abbodi_shop/"><li><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+      <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+    </svg>
+    </li></a>
+    <a href="https://www.tiktok.com/@sparkabdo"><li><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
+      <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
+    </svg></li></a>
+  </ul>
+</footer>
+  <script src="scripts/searchBarActivate.js"></script>
+  <script src="scripts/star-rating.js"></script>
+  <script src="scripts/cart.js"></script>
+  <script src="scripts/other-t-shirts.js" type="module"></script>
+</body>
+</html>

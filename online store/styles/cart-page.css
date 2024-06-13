@@ -1,0 +1,239 @@
+body {
+  font-size: 16px;
+}
+
+@media (min-width: 768px) {
+  body {
+      font-size: 18px;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+      font-size: 20px;
+  }
+}
+
+@media (min-width: 1440px) {
+  body {
+      font-size: 24px;
+  }
+}
+
+*{
+  margin : 0;
+  padding : 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'montserrat';
+}
+
+.searchBarSection{
+  position : fixed;
+  width : 100%;
+  height : 30px;
+}
+
+header{
+  position : fixed;
+  background-color: white;
+  width : 100%;
+  height : 50px;
+}
+
+.inner-header{
+  background-color: black;
+  height : 100%;
+  width : 100%;
+  margin : 0 auto;
+}
+
+.logo-container{
+  padding-left : 20px;
+  display : table;
+  height : 100%;
+  float : left
+}
+
+.logo-container a{
+  font-size : 10px;
+  height : 100%;
+  display : table-cell;
+  vertical-align: middle;
+  color : white;
+  font-family: 'montserrat';
+}
+
+.navigation{
+  height : 100%;
+  float : right;
+}
+
+.navigation a{
+  height : 100%;
+  display : table;
+  float : left;
+  padding-right : 13px;
+  cursor : pointer;
+}
+
+.navigation button {
+  height : 100%;
+  display : table;
+  float : left;
+  padding-right : 13px;
+  cursor : pointer;
+  border : none;
+  background-color : transparent;
+  padding-left : 35px;
+}
+
+.navigation a li{
+  height : 100%;
+  display : table-cell;
+  vertical-align: middle;
+  color : white;
+  font-family: 'montserrat';
+  font-size : 14px;
+  transition : color 0.4s;
+}
+
+.navigation a li:hover{
+  color : grey;
+}
+
+.navigation button a:last-child{
+  margin-left : 50px;
+  margin-top : 2px;
+}
+
+.cartIcon{
+  height : 25px;
+}
+
+main{
+  padding-top : 50px;
+  padding-bottom : 50px;
+}
+
+.container{
+  margin-top : 4%;
+  display : flex;
+  flex-direction: row;
+  justify-content : space-around;
+  height : 600px;
+  margin : 2% 8%;
+}
+
+.container div{
+  display : flex;
+  flex-direction : column;
+  align-items : center;
+}
+
+.order-summary{
+  width : 20%;
+  height : 230px;
+  justify-content: space-around;
+}
+
+.order-summary h4{
+  font-weight : 600;
+  align-self : flex-start;
+  margin-left : 12%;
+}
+
+.order-summary h4 span{
+  margin-left : 0.01%;
+  color : grey;
+}
+
+.order-summary h4 span:first-child{
+  margin-left : 5px;
+  color : grey;
+}
+
+.cart-items{
+  width : 70%;
+  border : solid black;
+}
+
+.container div h3{
+  text-align : center;
+}
+
+.order-summary hr{
+  width : 92% ;
+  margin-top : 1%;
+}
+
+footer {
+  background-color: black;
+  color : white;
+  height : 250px;
+  display : flex;
+  align-items: start;
+  padding : 2% 0;
+}
+
+footer div{
+  height : 50%;
+  display : grid;
+  grid-template-columns: repeat(4, 25%);
+  width : 80%;
+  margin :0 auto;
+}
+
+footer div ul{
+  display : flex;
+  flex-direction : column;
+  justify-content: space-between;
+  width : 100px;
+  height : 150px;
+}
+
+footer ul:last-child{
+  display : flex;
+  flex-direction : column;
+  justify-content: space-between;
+  width : 150px;
+  height : 125px;
+  margin-right : 4%;
+}
+
+footer ul:last-child li{
+  color : lightgrey;
+}
+
+footer ul:last-child li:hover{
+  color :grey;
+}
+
+footer div ul:last-child{
+  display : flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height : 105px;
+}
+
+footer div ul a li{
+  color : lightgrey;
+  font-size : 14px;
+  box-sizing: border-box;
+}
+
+footer div ul a{
+  padding : 1px
+}
+
+footer div ul a li{
+  transition : color 0.4s;
+}
+
+footer div ul a li:hover{
+  color : grey;
+}
+
+footer{
+  padding-top :70px ;
+}

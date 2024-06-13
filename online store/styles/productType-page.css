@@ -1,0 +1,355 @@
+*{
+  margin : 0;
+  padding : 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'montserrat';
+}
+
+.searchBarSection{
+  position : fixed;
+  width : 100%;
+  height : 30px;
+}
+
+header{
+  position : fixed;
+  background-color: white;
+  width : 100%;
+  height : 50px;
+}
+
+.inner-header{
+  background-color: black;
+  height : 100%;
+  width : 100%;
+  margin : 0 auto;
+}
+
+.logo-container{
+  padding-left : 20px;
+  display : table;
+  height : 100%;
+  float : left
+}
+
+.logo-container a{
+  font-size : 10px;
+  height : 100%;
+  display : table-cell;
+  vertical-align: middle;
+  color : white;
+  font-family: 'montserrat';
+}
+
+.navigation{
+  height : 100%;
+  float : right;
+}
+
+.navigation a{
+  height : 100%;
+  display : table;
+  float : left;
+  padding-right : 13px;
+  cursor : pointer;
+}
+
+.navigation button {
+  height : 100%;
+  display : table;
+  float : left;
+  padding-right : 13px;
+  cursor : pointer;
+  border : none;
+  background-color : transparent;
+  padding-left : 35px;
+}
+
+.navigation a li{
+  height : 100%;
+  display : table-cell;
+  vertical-align: middle;
+  color : white;
+  font-family: 'montserrat';
+  font-size : 14px;
+  transition : color 0.4s;
+}
+
+.navigation a li:hover{
+  color : grey;
+}
+
+.navigation button a:last-child{
+  margin-left : 50px;
+  margin-top : 2px;
+}
+
+.cartIcon{
+  height : 25px;
+}
+
+.search-icon{
+  transition : color 0.4s;
+}
+
+.search-icon:hover{
+  fill : grey;
+}
+
+.search-section{
+  height : 100%;
+  width : 100%;
+  display : table;
+  padding-bottom : 10px;
+}
+
+.searchBarContainer{
+  width : 50%;
+  height : 100%;
+  float : right;
+  display : table;
+  margin-right : 2%; 
+}
+
+.searchBarDiv{
+  width : 75%;
+  display : table-cell;
+  vertical-align: middle;
+}
+
+.search-bar{
+  width : 100%;
+  padding : 3px;
+}
+
+::placeholder{
+  margin-left : 10%;
+}
+
+.filterdNames{
+  border : solid lightgrey 0.01cm;
+  padding : 1% 0;
+  padding-left : 5%;
+  background-color : white;
+  display : flex;
+  align-items: center;
+  color : black;
+  font-family: 'Montserrat';
+  
+}
+
+.filterdNames div{
+  display : inline-block;
+}
+
+.text{
+  margin-right : 0;
+  margin-left : 5%;
+}
+
+.filter-div-css{
+  background-color: white;
+  width: 38%;
+  position: fixed;
+  right: 14%;
+  max-height: 300px;
+  overflow-y : auto; 
+  border: 1px solid lightgrey;
+}
+.searchBarButton{
+  width : 75%;
+  background-color : #FAFAFA ;
+  border : none;
+  margin-left : 1%;
+  padding : 4.3px;
+  border : solid black;
+}
+
+.sBarButtonDiv{
+  display : table-cell;
+  vertical-align: middle;
+}
+
+.categories-container{
+  height : 100%;
+  width : 30%;
+  display : table;
+  padding-left : 3%;
+}
+
+.categories-container a{
+  height : 100%;
+  display : table-cell;
+  vertical-align: middle;
+}
+
+.categories-container a li{
+  float : left;
+  font-size : 14px;
+  transition : color 0.4s;
+  cursor : pointer;
+  margin : 0 auto;
+  text-align :center;
+  width : 100%;
+}
+
+.categories-container li:hover{
+  color : grey;
+}
+
+.banner-section{
+  padding-top: 10px;
+  width : 100%;
+  text-align : center;
+}
+
+.container{
+  font-family: SYSTEM-UI;
+  display: grid;
+  grid-template-columns: repeat(auto-fit ,300px);
+  gap : 10px;
+  grid-template-rows : repeat(auto-fit,400px);
+  row-gap : 10px;
+  padding :0 1%;
+  padding-top : 5%;
+}
+.box{
+  border: 1px solid #ddd;
+  border-radius : 4px;
+  display : grid;
+  text-align :start;
+  grid-template-columns: subgrid;
+  grid-row: span 3;
+  row-gap :10px ;
+  cursor : pointer;
+}
+
+.box img{
+  width : 100%;
+}
+
+.box h3,
+.box p{
+  display : inline;
+  padding-left : 10px;
+}
+
+.contaner2{
+  font-family: SYSTEM-UI;
+  display: grid;
+  grid-template-columns: repeat(auto-fit ,300px);
+  gap : 10px;
+  grid-template-rows : 400px;
+  padding :0 1%;
+}
+
+main{
+  padding-top : 50px;
+  padding-bottom : 50px;
+}
+
+.button{
+  display : inline-block;
+  text-decoration : none;
+  background-color: black;
+  color : white;
+  border : none;
+  border-radius : 4px;
+  padding : 10px;
+  transition : 0.5s;
+  cursor : pointer;
+  text-align: center;
+}
+
+.button:hover{
+  color : grey;
+  opacity : 0.9;
+}
+
+.container2 div button:hover{
+  color : grey;
+  opacity : 0.9;
+}
+
+.banner-container{
+  height : 100%;
+  width : 100%;
+}
+
+.banner{
+  height : 100%;
+  width : 100%;
+  object-fit: cover;
+}
+
+footer {
+  background-color: black;
+  color : white;
+  height : 250px;
+  display : flex;
+  align-items: start;
+  padding : 2% 0;
+}
+
+footer div{
+  height : 50%;
+  display : grid;
+  grid-template-columns: repeat(4, 25%);
+  width : 80%;
+  margin :0 auto;
+}
+
+footer div ul{
+  display : flex;
+  flex-direction : column;
+  justify-content: space-between;
+  width : 100px;
+  height : 150px;
+}
+
+footer ul:last-child{
+  display : flex;
+  flex-direction : column;
+  justify-content: space-between;
+  width : 150px;
+  height : 125px;
+  margin-right : 4%;
+}
+
+footer ul:last-child li{
+  color : lightgrey;
+}
+
+footer ul:last-child li:hover{
+  color :grey;
+}
+
+footer div ul:last-child{
+  display : flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height : 105px;
+}
+
+footer div ul a li{
+  color : lightgrey;
+  font-size : 14px;
+  box-sizing: border-box;
+}
+
+footer div ul a{
+  padding : 1px
+}
+
+footer div ul a li{
+  transition : color 0.4s;
+}
+
+footer div ul a li:hover{
+  color : grey;
+}
+
+footer{
+  padding-top :70px ;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Filter Example</title>
+    <style>
+        #filter {
+            display: none; /* Initially hidden */
+            position: absolute;
+            background-color: white;
+            border: 1px solid #ccc;
+            padding: 10px;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="searchInput" placeholder="Search...">
+    <div id="filter">
+        <!-- Your filter options here -->
+        <p>Filter Option 1</p>
+        <p>Filter Option 2</p>
+    </div>
+
+    <script>
+        const searchInput = document.getElementById('searchInput');
+        const filter = document.getElementById('filter');
+
+        // Show the filter when the search input is focused
+        searchInput.addEventListener('focus', function() {
+            filter.style.display = 'block';
+            const rect = searchInput.getBoundingClientRect();
+            filter.style.top = `${rect.bottom + window.scrollY}px`;
+            filter.style.left = `${rect.left + window.scrollX}px`;
+        });
+
+        // Hide the filter when clicking outside of it
+        document.addEventListener('click', function(event) {
+            if (!filter.contains(event.target) && event.target !== searchInput) {
+                filter.style.display = 'none';
+            }
+        });
+
+        // Prevent closing the filter when clicking inside it
+        filter.addEventListener('click', function(event) {
+            event.stopPropagation();
+        });
+    </script>
+</body>
+</html>
